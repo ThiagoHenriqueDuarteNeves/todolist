@@ -1,89 +1,56 @@
-# TodoList App React
+# TodoList React App
 
-Um aplicativo simples de lista de tarefas desenvolvido com React e Vite. Este projeto demonstra o uso de:
-- Gerenciamento de estado com React Hooks (useState, useEffect)
-- Persistência de dados com localStorage
-- Filtros e ordenação de itens
-- Animações CSS para transições suaves
-- Priorização de tarefas
-- Indicadores visuais (contadores, destaque para alta prioridade)
+Este projeto é uma aplicação de lista de tarefas (To-Do List) desenvolvida em React e Vite.
 
-![Screenshot do TodoList App](https://i.imgur.com/placeholder.png)
+## O que o projeto faz?
+- Permite adicionar, remover e marcar tarefas como feitas ou pendentes.
+- Cada tarefa pode ter uma prioridade (1 a 5) e data de criação.
+- Filtros para exibir todas, apenas feitas ou apenas pendentes.
+- Ordenação opcional por prioridade.
+- Persistência automática das tarefas no navegador (localStorage).
+- Destaque visual para tarefas de prioridade máxima.
+- Contadores de tarefas feitas e pendentes.
+- Animações de transição para tarefas e filtros.
 
-## Funcionalidades
+## Como rodar localmente
 
-- Adicionar, editar e remover tarefas
-- Marcar tarefas como concluídas
-- Definir prioridades (1-5)
-- Ordenação por prioridade (opcional)
-- Filtrar tarefas (todas, pendentes, concluídas)
-- Persistência de dados no navegador
-- Destaque para tarefas prioritárias
-- Contadores de tarefas
-- Animações de transição
-
-## Requisitos
-
-- Node.js (versão 14 ou superior)
-- npm ou yarn
-
-## Instalação
-
-1. Clone o repositório:
-   ```
-   git clone https://github.com/ThiagoHenriqueDuarteNeves/todolist.git
-   cd todolist
-   ```
-
-2. Instale as dependências:
+1. Instale as dependências:
    ```
    npm install
    ```
-
-## Executando o projeto
-
-1. Inicie o servidor de desenvolvimento:
+2. Rode o servidor de desenvolvimento:
    ```
    npm run dev
    ```
+3. Acesse [http://localhost:5173](http://localhost:5173) no navegador.
 
-2. Abra o navegador e acesse:
-   ```
-   http://localhost:5173/
-   ```
+## Como fazer deploy na Vercel
 
-## Construção para produção
+1. Faça push da branch `develop` para o GitHub.
+2. No painel da Vercel, clique em "Add New Project" e selecione seu repositório.
+3. Configure:
+   - Build Command: `npm run build`
+   - Output Directory: `dist`
+   - Framework: `Vite` ou `Other`
+4. Clique em Deploy.
+5. Acesse a URL gerada pela Vercel.
 
-Para criar uma versão otimizada para produção:
+O arquivo `vercel.json` já está configurado para garantir o roteamento correto de SPA.
 
-```
-npm run build
-```
+## Scripts disponíveis
+- `npm run dev` — inicia o servidor de desenvolvimento
+- `npm run build` — gera a build de produção na pasta `dist`
+- `npm run preview` — serve a build de produção localmente
 
-Os arquivos de build estarão disponíveis na pasta `dist`.
-
-## Como usar a aplicação
-
-1. Digite o nome da tarefa no campo de entrada e clique em "Adicionar"
-2. Clique na tarefa para marcá-la como concluída/pendente
-3. Use o seletor de prioridade para definir a importância da tarefa (1-5)
-4. Use os botões de filtro para visualizar diferentes grupos de tarefas
-5. Marque a opção "Ordenar por prioridade" para reorganizar as tarefas por importância
-6. Clique no botão "Remover" para eliminar uma tarefa
-
-## Tecnologias utilizadas
-
+## Tecnologias
 - React 19
 - Vite
 - JavaScript (ES6+)
 - CSS3
-- HTML5
-- LocalStorage API
 
 ## Licença
-
 MIT
 
-## Autor
+---
 
-[Thiago Henrique Duarte Neves](https://github.com/ThiagoHenriqueDuarteNeves)
+Dúvidas? Abra uma issue no repositório!
